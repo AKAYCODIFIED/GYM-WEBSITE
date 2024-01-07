@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT1</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <style>
+        /* css reset  */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('iop.jpeg');
+            font-family: 'Baloo Bhai';
+            font-size: 22px;
+        }
+
+
+        .left {
+            position: absolute;
+            top: 25px;
+            left: 22px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 155px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 10px;
+        }
+
+        .center {
+            display: block;
+            width: 49%;
+            margin: 40px 302px;
+            /* these are the ways to place elem at center  */
+            /* border: 2px solid green; */
+
+        }
+
+        .right {
+            position: absolute;
+            top: 44px;
+            right: 5px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            margin: 15px 14px;
+            font-size: 20px;
+
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 24px 12px;
+        }
+
+        a.active {
+            color: grey;
+        }
+
+        .navbar a:hover {
+            color: rgb(219, 2, 252);
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 10px;
+            color: white;
+            background-color: #1d1d1d;
+            padding: 5px 15px;
+            border: 2px solid rgb(4, 248, 183);
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai';
+            font-size: 22px;
+        }
+
+        .btn:hover {
+            background-color: rgb(149, 0, 119);
+        }
+
+        .conti {
+            border: 2px solid white;
+            margin: 160px 100px;
+            padding: 35px 25px;
+            border-radius: 15px;
+            width: 30%;
+        }
+        .formgroup input{
+            text-align: center;
+            border: 3px solid rgb(157, 6, 238);
+            border-radius: 10px;
+            padding: 1px;
+            display: block;
+            margin: 10px auto;
+            width: 400px;
+            font-size: 22px;
+            font-family: 'Baloo Bhai';
+            /* use borders only for designing purpose  */
+            
+
+        }
+        .heading{
+            text-align: center;
+        }
+        .conti button{
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+             
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left div for logo  -->
+        <div class="left">
+            <img src="bc.webp" alt="">
+            <div>PUNJABI FITNESS</div>
+        </div>
+        <!-- center div for nav bar  -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <!-- right bar for search options -->
+        <div class="right">
+            <button class="btn">Membership</button>
+            <button class="btn">Log In</button>
+        </div>
+    </header>
+    <div class="conti">
+        <h3 class="heading">Base Fit- Punjabi Fitness Studio</h3>
+        <form action="backend.php">
+            <div class="formgroup">
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="enter your gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="enter your locality">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
